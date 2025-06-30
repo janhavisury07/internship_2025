@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff5e6;
+}
+
+/* Flexbox layout for the pizza nav */
+.pizza-menu {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffe0b2;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for pizza links */
+.pizza-menu a {
+  text-decoration: none;
+  color: #d84315;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.pizza-menu a:hover {
+  color: #ff7043;
+}

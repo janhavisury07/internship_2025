@@ -1,0 +1,32 @@
+/* Heading with justified alignment */
+.justify-heading {
+  text-align: justify;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Paragraph alignments */
+.text-container {
+  padding: 20px;
+}
+
+.left-align {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.center-align {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.right-align {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+.note {
+  margin-top: 30px;
+  font-size: 14px;
+  color: #555;
+}

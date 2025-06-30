@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #fef5e7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.model {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  padding: 20px 40px;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #ffccbc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* 👒 Desktop: Show Hat */
+.scarf, .sunglasses {
+  display: none;
+}
+
+/* 📱 Mobile (<480px): Show Sunglasses only */
+@media (max-width: 480px) {
+  .hat, .scarf {
+    display: none;
+  }
+  .sunglasses {
+    display: block;
+  }
+}
+
+/* 📱 Tablet (481px–768px): Show Scarf only */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hat, .sunglasses {
+    display: none;
+  }
+  .scarf {
+    display: block;
+  }
+}
+
+/* 💻 Desktop (>768px): Show Hat only */
+@media (min-width: 769px) {
+  .hat {
+    display: block;
+  }
+}

@@ -1,0 +1,20 @@
+/* Parent styles */
+.parent {
+  font-size: 18px;             /* Inherited */
+  color: #3498db;              /* Inherited */
+  border: 2px solid black;     /* NOT inherited */
+  padding: 20px;
+  margin: 20px;
+}
+
+/* Optional: Add some spacing */
+table {
+  margin-top: 20px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid gray;
+  padding: 8px;
+}

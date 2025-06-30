@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../css"
+		},
+		{
+			"path": "../html"
+		},
+		{
+			"path": "../java"
+		},
+		{
+			"path": "../Javascript"
+		},
+		{
+			"path": "../p2-batch-2025"
+		},
+		{
+			"path": "../python"
+		}
+	]
+}

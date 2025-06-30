@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Accessibility Example</title>
+</head>
+<body>
+
+  <!-- Accessible Image with Alt Text -->
+  <img src="https://via.placeholder.com/300x150" alt="Sample placeholder image of 300 by 150 pixels">
+
+  <br><br>
+
+  <!-- Accessible Form with Labels -->
+  <form>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+
+  <br>
+
+  <!-- Navigation using ARIA role -->
+  <div role="navigation">
+    <a href="#">Home</a> |
+    <a href="#">About</a> |
+    <a href="#">Contact</a>
+  </div>
+
+</body>
+</html>

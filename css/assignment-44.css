@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #111;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disco-box {
+  width: 150px;
+  height: 150px;
+  border-radius: 12px;
+  animation: disco 4s infinite linear;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* 💃 Disco keyframes */
+@keyframes disco {
+  0% {
+    transform: rotate(0deg);
+    background-color: #ff1744; /* Red */
+  }
+  20% {
+    background-color: #fdd835; /* Yellow */
+  }
+  40% {
+    background-color: #00e676; /* Green */
+  }
+  60% {
+    background-color: #2979ff; /* Blue */
+  }
+  80% {
+    background-color: #d500f9; /* Purple */
+  }
+  100% {
+    transform: rotate(360deg);
+    background-color: #ff1744; /* Loop back to Red */
+  }
+}

@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Robot Container */
+.robot {
+  position: relative;
+  width: 120px;
+  height: 250px;
+}
+
+/* Head */
+.head {
+  width: 80px;
+  height: 80px;
+  background: #ffcc00;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+/* Body */
+.body {
+  width: 100px;
+  height: 100px;
+  background: #2196f3;
+  margin: 10px auto;
+  border-radius: 8px;
+}
+
+/* Arms */
+.left-arm, .right-arm {
+  width: 20px;
+  height: 80px;
+  background: #4caf50;
+  position: absolute;
+  top: 90px;
+}
+
+.left-arm {
+  left: -25px;
+}
+
+.right-arm {
+  right: -25px;
+}
+
+/* Legs */
+.left-leg, .right-leg {
+  width: 30px;
+  height: 60px;
+  background: #9c27b0;
+  position: absolute;
+  bottom: 0;
+}
+
+.left-leg {
+  left: 10px;
+}
+
+.right-leg {
+  right: 10px;
+}
+
+/* 🧠 TRANSFORM ON SMALL SCREENS */
+@media (max-width: 600px) {
+  .robot {
+    transform: rotate(90deg);
+    transition: transform 0.5s ease;
+  }
+
+  .left-arm {
+    transform: translate(-30px, 30px) rotate(45deg);
+  }
+
+  .right-arm {
+    transform: translate(30px, 30px) rotate(-45deg);
+  }
+
+  .left-leg {
+    transform: translate(-10px, 20px) rotate(-30deg);
+  }
+
+  .right-leg {
+    transform: translate(10px, 20px) rotate(30deg);
+  }
+}

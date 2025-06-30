@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Crab Style */
+.crab {
+  font-size: 100px;
+  animation: crabWalk 3s infinite ease-in-out;
+  display: inline-block;
+}
+
+/* 🦀 Side-to-side + rotation animation */
+@keyframes crabWalk {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  25% {
+    transform: translateX(50px) rotate(5deg);
+  }
+  50% {
+    transform: translateX(0) rotate(0deg);
+  }
+  75% {
+    transform: translateX(-50px) rotate(-5deg);
+  }
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}

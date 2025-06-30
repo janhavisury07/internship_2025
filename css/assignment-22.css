@@ -1,0 +1,32 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Custom Styles */
+    body{
+      font-family: Arial, sans-serif;
+      color: #333;
+    }
+    h1 {
+      color: #3498db;
+    }
+    ul {
+      list-style-type: square;
+    } {
+      font-family: Arial, sans-serif;
+      color: #333;
+      padding: 20px;
+    }
+    h1 {
+      color: #3498db;
+      margin-bottom: 15px;
+    }
+    p {
+      margin-bottom: 10px;
+    }
+    ul {
+      margin-left: 20px;
+    }
+        

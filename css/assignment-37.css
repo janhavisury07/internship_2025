@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9fbe7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Georgia', serif;
+}
+
+.frame {
+  border: 8px solid #8d6e63;
+  background-color: #fffde7;
+  padding: 40px 60px;
+  margin: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 1.8rem;
+  transition: all 0.3s ease;
+  max-width: 90%;
+}
+
+/* 📱 Mobile (≤480px) */
+@media (max-width: 480px) {
+  .frame {
+    font-size: 1.1rem;
+    padding: 20px 15px;
+    border-width: 4px;
+  }
+}
+
+/* 📱 Tablet (481px–768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .frame {
+    font-size: 1.4rem;
+    padding: 30px 30px;
+    border-width: 6px;
+  }
+}
+
+/* 💻 Desktop (>768px) */
+@media (min-width: 769px) {
+  .frame {
+    font-size: 1.8rem;
+    padding: 40px 60px;
+    border-width: 8px;
+  }
+}

@@ -1,0 +1,23 @@
+/* Class Selectors */
+.gradeA {
+  background-color: #d4edda; /* light green */
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+.gradeB {
+  background-color: #f8d7da; /* light red */
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+/* Attribute Selectors */
+input[type="text"] {
+  border: 2px solid blue;
+  padding: 5px;
+}
+
+input[type="email"] {
+  border: 2px dashed green;
+  padding: 5px;
+}

@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Flex container to arrange cards in a row */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* optional: adds space between cards */
+}
+
+/* Individual card styling */
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 30%;
+  padding: 16px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.card h3 {
+  margin: 0 0 8px;
+}
+
+.card p {
+  font-size: 0.9rem;
+  color: #555;
+}

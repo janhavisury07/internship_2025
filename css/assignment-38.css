@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eceff1;
+  font-family: Arial, sans-serif;
+}
+
+/* Main container */
+.mood-box {
+  width: 80%;
+  max-width: 600px;
+  height: 300px;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Mood message using ::after */
+.mood-box::after {
+  content: "Feeling calm 🌊";
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+}
+
+/* 💻 Large screen mood */
+@media (min-width: 769px) {
+  .mood-box {
+    background-color: #2196f3; /* Blue */
+  }
+
+  .mood-box::after {
+    content: "Feeling calm 🌊";
+  }
+}
+
+/* 📱 Tablet / Medium screen mood */
+@media (min-width: 481px) and (max-width: 768px) {
+  .mood-box {
+    background-color: #ffeb3b; /* Yellow */
+  }
+
+  .mood-box::after {
+    content: "Feeling energetic ☀️";
+    color: #333;
+  }
+}
+
+/* 📱 Small screen mood */
+@media (max-width: 480px) {
+  .mood-box {
+    background-color: #f44336; /* Red */
+  }
+
+  .mood-box::after {
+    content: "Feeling intense 🔥";
+  }
+}

@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(to top, #263238, #90a4ae);
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+}
+
+.launch-pad {
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.rocket {
+  font-size: 80px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+/* 🔥 Launch animation */
+.launch {
+  animation: blastoff 1.5s ease-in forwards;
+}
+
+/* 🚀 @keyframes for launch */
+@keyframes blastoff {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    transform: translateY(-100px) scale(1.1);
+  }
+  60% {
+    transform: translateY(-300px) scale(0.9);
+  }
+  100% {
+    transform: translateY(-500px) scale(0.5);
+    opacity: 0;
+  }
+}
